@@ -1,0 +1,13 @@
+{
+  "name": "cuet-computer-club-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+ "scripts": {
+    "build:css": "tailwindcss -i ./css/input.css -o ./dist/output.css",
+    "dev": "tailwindcss -i ./css/input.css -o ./dist/output.css --watch"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.17"
+  }
+}

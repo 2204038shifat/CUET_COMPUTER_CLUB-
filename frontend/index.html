@@ -1,0 +1,2493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <title>CUET Computer Club | Technology, Innovation & Community</title>
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+ <meta
+  name="description"
+  content="CUET Computer Club — a student-driven community focused on technology, innovation, learning and collaboration at CUET."
+/>
+<meta
+  name="theme-color"
+  content="#24316E"
+/>
+
+
+  <link rel="stylesheet" href="./css/output.css">
+</head>
+
+<body class="bg-club-background text-club-text-primary">
+
+  <!-- =========================================================
+       GLOBAL NAVBAR
+       ========================================================= -->
+
+       <!-- =========================
+     INSTITUTIONAL HEADER
+========================= -->
+<header class="fixed top-0 left-0 right-0 z-50 w-full bg-white">
+
+
+  <!-- Top Utility Bar -->
+  <div class="hidden border-b border-club-border bg-white md:block">
+    <div class="club-container flex h-9 items-center justify-between text-xs text-club-primary">
+
+      <div class="flex items-center gap-6">
+        <a
+          href="mailto:computerclub@cuet.ac.bd"
+          class="transition hover:text-club-primary"
+        >
+          computerclub@cuet.ac.bd
+        </a>
+
+        <a
+          href="#"
+          class="transition hover:text-club-primary"
+        >
+          Alumni
+        </a>
+      </div>
+
+      <div class="flex items-center gap-6">
+        <a
+          href="#"
+          class="transition hover:text-club-primary"
+        >
+          Administration
+        </a>
+
+        <a
+          href="#"
+          class="inline-flex items-center gap-1 transition hover:text-club-primary"
+        >
+          Student Portal
+
+          <svg
+            class="h-3 w-3"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+            aria-hidden="true"
+          >
+            <path
+              d="M11 3a1 1 0 100 2h2.586l-7.293 7.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z"
+            />
+            <path
+              d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 100-2H5z"
+            />
+          </svg>
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- Main Navigation -->
+  <div class="border-b border-club-border bg-club-primary">
+    <div class="club-container relative">
+
+      <div class="flex h-[4.5rem] items-center justify-between">
+
+        <!-- Left Navigation -->
+        <nav
+          class="hidden items-center gap-7 lg:flex"
+          aria-label="Primary navigation"
+        >
+          <a
+            href="index.html"
+            class="font-medium text-white transition hover:text-club-primary"
+          >
+            Home
+          </a>
+
+          <a
+            href="./pages/about.html"
+            class="font-medium text-white transition hover:text-club-primary"
+          >
+            About
+          </a>
+
+          <a
+            href="./pages/events.html"
+            class="font-medium text-white transition hover:text-club-primary"
+          >
+            Events
+          </a>
+
+          <a
+            href="./pages/news.html"
+            class="font-medium text-white transition hover:text-club-primary"
+          >
+            News
+          </a>
+        </nav>
+
+
+        <!-- Center Brand -->
+        <a
+          href="index.html"
+          class="absolute left-1/2 top-1/2 flex -translate-x-1/2 -translate-y-1/2 items-center gap-3"
+          aria-label="CUET Computer Club Home"
+        >
+
+          <!-- Temporary Logo -->
+          <div
+            class="flex h-14 w-14 items-center justify-center rounded-xl border-4 border-white bg-club-primary text-lg font-bold text-white shadow-club-md"
+          >
+            CCC
+          </div>
+
+          <div class="hidden xl:block">
+            <p class="text-sm font-bold leading-tight text-white">
+              CUET Computer Club
+            </p>
+
+            <p class="mt-0.5 text-[11px] leading-tight text-club-text-muted">
+              Chittagong University of Engineering &amp; Technology
+            </p>
+          </div>
+
+        </a>
+
+
+        <!-- Right Navigation -->
+        <nav
+          class="ml-auto hidden items-center gap-7 lg:flex"
+          aria-label="Secondary navigation"
+        >
+          <a
+            href="./pages/projects.html"
+            class="font-medium text-white transition hover:text-club-primary"
+          >
+            Projects
+          </a>
+
+          <a
+            href="./pages/gallery.html"
+            class="font-medium text-white transition hover:text-club-primary"
+          >
+            Gallery
+          </a>
+
+          <a
+            href="./pages/contact.html"
+            class="font-medium text-white transition hover:text-club-primary"
+          >
+            Contact
+          </a>
+
+          <a
+            href="./pages/login.html"
+            class="font-medium text-white club-btn 
+            club-btn-secondary transition hover:text-club-primary"
+          >
+            Login
+          </a>
+
+          <a
+            href="./pages/register.html"
+            class="club-btn club-btn-secondary
+            transition hover:text-club-primary" inline-flex items-center justify-center"
+          >
+            Register
+          </a>
+        </nav>
+
+
+        <!-- Mobile Brand -->
+        <a
+          href="./index.html"
+          class="flex items-center gap-3 lg:hidden"
+          aria-label="CUET Computer Club Home"
+        >
+          <div
+            class="flex h-10 w-10 items-center justify-center rounded-lg bg-club-primary text-sm font-bold text-white"
+          >
+            CUET Computer Club
+          </div>
+
+          <div class="hidden sm:block">
+            <p class="text-sm font-bold text-club-primary">
+              CUET Computer Club
+            </p>
+            <p class="text-[10px] text-club-text-muted">
+              
+            </p>
+          </div>
+        </a>
+
+
+        <!-- Mobile Menu Button -->
+        <button
+          id="mobile-menu-button"
+          type="button"
+          class="ml-auto inline-flex h-10 w-10 items-center justify-center rounded-club border border-club-border text-club-accent transition hover:bg-club-background lg:hidden"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+          aria-label="Open navigation menu"
+        >
+
+          <!-- Menu Icon -->
+          <svg
+            id="mobile-menu-open-icon"
+            class="h-5 w-5"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+            aria-hidden="true"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"
+            />
+          </svg>
+
+          <!-- Close Icon -->
+          <svg
+            id="mobile-menu-close-icon"
+            class="hidden h-5 w-5"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+            aria-hidden="true"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+              clip-rule="evenodd"
+            />
+          </svg>
+
+        </button>
+
+      </div>
+
+
+      <!-- Mobile Navigation -->
+      <div
+        id="mobile-menu"
+        class="hidden border-t border-club-border py-4 lg:hidden"
+      >
+        <nav
+          class="flex flex-col gap-1"
+          aria-label="Mobile navigation"
+        >
+
+          <a
+            href="./index.html"
+            class="rounded-club px-4 py-3 font-medium text-club-accent hover:bg-club-background"
+          >
+            Home
+          </a>
+
+          <a
+            href="./pages/about.html"
+            class="rounded-club px-4 py-3 font-medium text-club-accent hover:bg-club-background"
+          >
+            About
+          </a>
+
+          <a
+            href="./pages/events.html"
+            class="rounded-club px-4 py-3 font-medium text-club-accent hover:bg-club-background"
+          >
+            Events
+          </a>
+
+          <a
+            href="./pages/news.html"
+            class="rounded-club px-4 py-3 font-medium text-club-accent hover:bg-club-background"
+          >
+            News
+          </a>
+
+          <a
+            href="./pages/projects.html"
+            class="rounded-club px-4 py-3 font-medium text-club-accent hover:bg-club-background"
+          >
+            Projects
+          </a>
+
+          <a
+            href="./pages/gallery.html"
+            class="rounded-club px-4 py-3 font-medium text-club-accent hover:bg-club-background"
+          >
+            Gallery
+          </a>
+
+          <a
+            href="./pages/contact.html"
+            class="rounded-club px-4 py-3 font-medium text-club-accent hover:bg-club-background"
+          >
+            Contact
+          </a>
+
+          <div class="mt-3 grid grid-cols-2 gap-3 border-t border-club-border pt-4">
+
+            <a
+              href="./pages/login.html"
+              class="club-btn club-btn-primary inline-flex items-center justify-center"
+            >
+              Login
+            </a>
+
+            <a
+              href="./pages/register.html"
+              class="club-btn club-btn-primary inline-flex items-center justify-center"
+            >
+              Register
+            </a>
+
+          </div>
+
+        </nav>
+      </div>
+
+    </div>
+  </div>
+
+</header>
+
+  
+
+
+  <!-- =========================================================
+       TEMPORARY CONTENT
+       ========================================================= -->
+
+
+       <!-- =========================
+     HERO SECTION
+
+     <!-- =========================
+     HERO SECTION
+========================= -->
+<main class="pt-[4.5rem] md:pt-[6.75rem]">
+  <section
+    class="relative min-h-[calc(100vh-5rem)] overflow-hidden bg-club-primary"
+    aria-labelledby="hero-title"
+  >
+    <!-- Hero Background Image -->
+    <div class="absolute inset-0">
+      <img
+        src="./assets/images/bannerr.png"
+        alt="CUET Computer Club campus"
+      
+        class="h-full w-full object-cover"
+      />
+    </div>
+
+    <!-- Dark Institutional Overlay -->
+   <!-- Dark Institutional Overlay -->
+<div
+  class="absolute inset-0 bg-club-primary/45"
+  aria-hidden="true"
+></div>
+
+<!-- Subtle Blue Gradient -->
+<div
+  class="absolute inset-0 bg-gradient-to-b from-club-primary/35 via-club-primary/40 to-club-primary/65"
+  aria-hidden="true"
+></div>
+
+    <!-- Hero Content -->
+    <div
+      class="club-container relative flex min-h-[calc(100vh-5rem)] items-center justify-center py-20 sm:py-24 lg:py-28"
+    >
+      <div class="w-full max-w-6xl text-center">
+
+        <!-- Eyebrow -->
+        <p
+          class="mb-5 text-sm font-semibold uppercase tracking-[0.25em] text-club-accent sm:text-base"
+        >
+          Welcome to
+        </p>
+
+        <!-- Main Heading -->
+        <h1
+          id="hero-title"
+          class="mx-auto max-w-5xl text-4xl font-extrabold leading-[1.08] tracking-tight text-white sm:text-5xl md:text-6xl lg:text-7xl"
+        >
+          CUET Computer Club
+        </h1>
+
+        <!-- Secondary Heading -->
+        <p
+          class="mx-auto mt-5 max-w-4xl text-2xl font-semibold leading-tight text-white/95 sm:text-3xl md:text-4xl"
+        >
+        
+          <span class="text-club-accent">
+            
+          </span>
+        </p>
+
+        <!-- Description -->
+        <p
+          class="mx-auto mt-7 max-w-2xl text-base leading-7 text-white/80 sm:text-lg"
+        >
+          A community of passionate students learning, building,
+          competing, and creating meaningful technology-driven solutions
+          at CUET.
+        </p>
+
+        <!-- CTA -->
+        <div class="mt-9 flex flex-col items-center justify-center gap-3 sm:flex-row">
+          <a
+            href="./pages/events.html"
+            class="club-btn inline-flex min-w-44 items-center justify-center bg-club-accent text-white shadow-lg transition hover:-translate-y-0.5 hover:bg-club-accent/90"
+          >
+            Explore Events
+            <svg
+              class="ml-2 h-4 w-4"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+              aria-hidden="true"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M10.293 3.293a1 1 0 011.414 0l5 5a1 1 0 010 1.414l-5 5a1 1 0 01-1.414-1.414L13.586 10H3a1 1 0 110-2h10.586l-3.293-3.293a1 1 0 010-1.414z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </a>
+
+          <a
+            href="./pages/about.html"
+            class="club-btn inline-flex min-w-44 items-center justify-center border border-white/40 bg-white/10 text-white backdrop-blur-sm hover:bg-white/20"
+          >
+            About the Club
+          </a>
+        </div>
+
+        <!-- Trust / Identity Line -->
+        <div
+          class="mx-auto mt-12 flex flex-wrap items-center justify-center gap-x-6 gap-y-3 text-sm text-white/70"
+        >
+          <span>Learn</span>
+
+          <span
+            class="h-1 w-1 rounded-full bg-club-accent"
+            aria-hidden="true"
+          ></span>
+
+          <span>Build</span>
+
+          <span
+            class="h-1 w-1 rounded-full bg-club-accent"
+            aria-hidden="true"
+          ></span>
+
+          <span>Innovate</span>
+
+          <span
+            class="h-1 w-1 rounded-full bg-club-accent"
+            aria-hidden="true"
+          ></span>
+
+          <span>Lead</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Carousel Indicators -->
+    <div
+      class="absolute bottom-7 left-1/2 flex -translate-x-1/2 items-center gap-2"
+      aria-label="Hero slides"
+    >
+      <button
+        type="button"
+        class="h-2.5 w-10 rounded-full bg-white"
+        aria-label="Slide 1"
+        aria-current="true"
+      ></button>
+
+      <button
+        type="button"
+        class="h-2.5 w-2.5 rounded-full bg-white/40 transition hover:bg-white/70"
+        aria-label="Slide 2"
+      ></button>
+
+      <button
+        type="button"
+        class="h-2.5 w-2.5 rounded-full bg-white/40 transition hover:bg-white/70"
+        aria-label="Slide 3"
+      ></button>
+
+      <button
+        type="button"
+        class="h-2.5 w-2.5 rounded-full bg-white/40 transition hover:bg-white/70"
+        aria-label="Slide 4"
+      ></button>
+    </div>
+  </section>
+
+
+
+  <!-- =========================
+     WHAT WE DO SECTION
+========================= -->
+<section
+  class="bg-white py-20 sm:py-24"
+  aria-labelledby="what-we-do-title"
+>
+  <div class="club-container">
+
+    <!-- Section Header -->
+    <div class="mx-auto max-w-3xl text-center">
+     <div
+  class="mb-4 inline-flex items-center rounded-full border border-club-accent/30 bg-club-accent/10 px-4 py-2"
+>
+  <p
+    class="text-2xl font-bold uppercase tracking-[0.18em] text-club-accent"
+  >
+    What We Do
+  </p>
+</div>
+
+      <h2
+  id="what-we-do-title"
+  class="mt-3 text-3xl font-bold tracking-tight text-club-text-primary sm:text-4xl"
+>
+  Learn, Build,
+  <span class="text-club-primary">Compete &amp; Collaborate</span>
+</h2>
+
+      <p
+        class="mt-5 text-base leading-7 text-club-text-secondary sm:text-lg"
+      >
+        CUET Computer Club creates opportunities for students to
+        develop technical skills, explore ideas, build projects,
+        and connect with a growing technology community.
+      </p>
+    </div>
+
+
+    <!-- Activity Cards -->
+    <div
+      class="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4"
+    >
+
+      <!-- Events & Competitions -->
+      <article
+        class="group rounded-club-lg border border-club-border bg-club-surface p-6 shadow-club-sm transition duration-200 hover:-translate-y-1 hover:shadow-club-md"
+      >
+        <div
+          class="flex h-12 w-12 items-center justify-center rounded-club bg-club-primary/10 text-club-primary"
+          aria-hidden="true"
+        >
+          <svg
+            class="h-6 w-6"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.8"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M8 7V4m8 3V4M4 10h16M6 6h12a2 2 0 012 2v10a2 2 0 01-2 2H6a2 2 0 01-2-2V8a2 2 0 012-2z"
+            />
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M8 14h3m2 0h3M8 17h2"
+            />
+          </svg>
+        </div>
+
+        <h3
+          class="mt-6 text-lg font-bold text-club-text-primary"
+        >
+          Events &amp; Competitions
+        </h3>
+
+        <p
+          class="mt-3 text-sm leading-6 text-club-text-secondary"
+        >
+          Participate in technology events, programming contests,
+          hackathons, and other competitive activities.
+        </p>
+
+        <a
+          href="./pages/events.html"
+          class="mt-5 inline-flex items-center text-sm font-semibold text-club-primary transition group-hover:text-club-secondary"
+        >
+          Explore Events
+          <span class="ml-2" aria-hidden="true">→</span>
+        </a>
+      </article>
+
+
+      <!-- Workshops & Learning -->
+      <article
+        class="group rounded-club-lg border border-club-border bg-club-surface p-6 shadow-club-sm transition duration-200 hover:-translate-y-1 hover:shadow-club-md"
+      >
+        <div
+          class="flex h-12 w-12 items-center justify-center rounded-club bg-club-secondary/10 text-club-secondary"
+          aria-hidden="true"
+        >
+          <svg
+            class="h-6 w-6"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.8"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M4 19.5A2.5 2.5 0 016.5 17H20"
+            />
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"
+            />
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M8 6h8M8 10h8"
+            />
+          </svg>
+        </div>
+
+        <h3
+          class="mt-6 text-lg font-bold text-club-text-primary"
+        >
+          Workshops &amp; Learning
+        </h3>
+
+        <p
+          class="mt-3 text-sm leading-6 text-club-text-secondary"
+        >
+          Learn practical technologies through workshops, talks,
+          training sessions, and peer-to-peer knowledge sharing.
+        </p>
+
+        <a
+          href="./pages/news.html"
+          class="mt-5 inline-flex items-center text-sm font-semibold text-club-primary transition group-hover:text-club-secondary"
+        >
+          Learn More
+          <span class="ml-2" aria-hidden="true">→</span>
+        </a>
+      </article>
+
+
+      <!-- Projects & Innovation -->
+      <article
+        class="group rounded-club-lg border border-club-border bg-club-surface p-6 shadow-club-sm transition duration-200 hover:-translate-y-1 hover:shadow-club-md"
+      >
+        <div
+          class="flex h-12 w-12 items-center justify-center rounded-club bg-club-accent/10 text-club-accent"
+          aria-hidden="true"
+        >
+          <svg
+            class="h-6 w-6"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.8"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M8 9l-3 3 3 3M16 9l3 3-3 3M14 6l-4 12"
+            />
+          </svg>
+        </div>
+
+        <h3
+          class="mt-6 text-lg font-bold text-club-text-primary"
+        >
+          Projects &amp; Innovation
+        </h3>
+
+        <p
+          class="mt-3 text-sm leading-6 text-club-text-secondary"
+        >
+          Turn ideas into real solutions through collaborative
+          projects, experimentation, research, and innovation.
+        </p>
+
+        <a
+          href="./pages/projects.html"
+          class="mt-5 inline-flex items-center text-sm font-semibold text-club-primary transition group-hover:text-club-secondary"
+        >
+          View Projects
+          <span class="ml-2" aria-hidden="true">→</span>
+        </a>
+      </article>
+
+
+      <!-- Community & Collaboration -->
+      <article
+        class="group rounded-club-lg border border-club-border bg-club-surface p-6 shadow-club-sm transition duration-200 hover:-translate-y-1 hover:shadow-club-md"
+      >
+        <div
+          class="flex h-12 w-12 items-center justify-center rounded-club bg-club-primary/10 text-club-primary"
+          aria-hidden="true"
+        >
+          <svg
+            class="h-6 w-6"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.8"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M17 20v-1.5A3.5 3.5 0 0013.5 15h-3A3.5 3.5 0 007 18.5V20"
+            />
+            <circle
+              cx="12"
+              cy="8"
+              r="3"
+            />
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M19 16v-1a3 3 0 00-2.2-2.9M5 16v-1a3 3 0 012.2-2.9M16.5 5.2a3 3 0 010 5.6M7.5 5.2a3 3 0 000 5.6"
+            />
+          </svg>
+        </div>
+
+        <h3
+          class="mt-6 text-lg font-bold text-club-text-primary"
+        >
+          Community &amp; Collaboration
+        </h3>
+
+        <p
+          class="mt-3 text-sm leading-6 text-club-text-secondary"
+        >
+          Connect with like-minded students, share knowledge,
+          collaborate on ideas, and grow together as a community.
+        </p>
+
+        <a
+          href="./pages/about.html"
+          class="mt-5 inline-flex items-center text-sm font-semibold text-club-primary transition group-hover:text-club-secondary"
+        >
+          Our Community
+          <span class="ml-2" aria-hidden="true">→</span>
+        </a>
+      </article>
+
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
+<!-- =========================
+     ABOUT THE CLUB SECTION
+========================= -->
+<section
+  class="bg-club-background py-20 sm:py-24"
+  aria-labelledby="about-club-title"
+>
+  <div class="club-container">
+
+    <div class="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
+
+      <!-- Image / Visual -->
+      <div class="relative">
+        <div
+          class="relative aspect-[4/3] overflow-hidden rounded-club-lg border border-club-border bg-club-surface shadow-club-md"
+        >
+          <img
+            src="./assets/images/image1.jpg"
+            alt="CUET Computer Club activities"
+            class="h-full w-full object-cover"
+          />
+
+          <!-- Image Overlay -->
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-club-primary/60 via-transparent to-transparent"
+            aria-hidden="true"
+          ></div>
+
+          <!-- Image Caption -->
+          <div class="absolute bottom-0 left-0 right-0 p-6">
+            <p
+              class="text-sm font-semibold uppercase tracking-wider text-club-accent"
+            >
+              CUET Computer Club
+            </p>
+
+            <p class="mt-1 text-lg font-semibold text-white">
+              Learn. Build. Grow Together.
+            </p>
+          </div>
+        </div>
+
+        <!-- Decorative Accent -->
+        <div
+          class="absolute -bottom-4 -left-4 -z-0 h-24 w-24 rounded-club-lg bg-club-accent/15"
+          aria-hidden="true"
+        ></div>
+      </div>
+
+
+      <!-- Content -->
+      <div class="relative z-10">
+
+      <div
+  class="mb-4 inline-flex items-center rounded-full border border-club-accent/30 bg-club-accent/10 px-4 py-2"
+>
+  <p
+    class="text-2xl font-bold uppercase tracking-[0.18em] text-club-accent"
+  >
+    About the Club
+  </p>
+</div>
+
+     <h2
+  id="about-club-title"
+  class="mt-3 text-3xl font-bold leading-tight tracking-tight text-club-text-primary sm:text-4xl"
+>
+  A community built around
+  <span class="text-club-primary">
+    technology, learning and collaboration.
+  </span>
+</h2>
+
+        <p
+          class="mt-6 text-base leading-7 text-club-text-secondary sm:text-lg"
+        >
+          CUET Computer Club brings together students who are passionate
+          about computing, technology and innovation. The club provides
+          a platform to learn new skills, exchange ideas and work together
+          on meaningful initiatives.
+        </p>
+
+        <p
+          class="mt-4 text-base leading-7 text-club-text-secondary"
+        >
+          Through events, workshops, competitions and collaborative
+          projects, members can explore different areas of technology
+          while developing practical experience and professional skills.
+        </p>
+
+
+        <!-- Key Points -->
+        <div class="mt-8 grid gap-4 sm:grid-cols-2">
+
+          <div class="flex items-start gap-3">
+            <div
+              class="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-club-primary/10 text-club-primary"
+              aria-hidden="true"
+            >
+              <svg
+                class="h-4 w-4"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M16.704 5.29a1 1 0 010 1.42l-7.25 7.25a1 1 0 01-1.408 0l-3.75-3.75a1 1 0 111.408-1.42l3.046 3.047 6.546-6.547a1 1 0 011.408 0z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </div>
+
+            <div>
+              <h3 class="font-semibold text-club-text-primary">
+                Practical Learning
+              </h3>
+
+              <p class="mt-1 text-sm leading-6 text-club-text-secondary">
+                Develop skills through hands-on activities and learning
+                opportunities.
+              </p>
+            </div>
+          </div>
+
+
+          <div class="flex items-start gap-3">
+            <div
+              class="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-club-secondary/10 text-club-secondary"
+              aria-hidden="true"
+            >
+              <svg
+                class="h-4 w-4"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  d="M9 12a3 3 0 100-6 3 3 0 000 6zm0-8a5 5 0 110 10A5 5 0 019 4z"
+                />
+                <path
+                  d="M2 18a7 7 0 0114 0H2zm12-8a3 3 0 100-6 3 3 0 000 6zm0 2a5 5 0 015 5h-3a7 7 0 00-2-5z"
+                />
+              </svg>
+            </div>
+
+            <div>
+              <h3 class="font-semibold text-club-text-primary">
+                Strong Community
+              </h3>
+
+              <p class="mt-1 text-sm leading-6 text-club-text-secondary">
+                Connect with students who share an interest in technology.
+              </p>
+            </div>
+          </div>
+
+
+          <div class="flex items-start gap-3">
+            <div
+              class="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-club-accent/15 text-club-accent"
+              aria-hidden="true"
+            >
+              <svg
+                class="h-4 w-4"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  d="M10 2a1 1 0 01.894.553l2.01 4.02 4.438.645a1 1 0 01.554 1.706l-3.21 3.13.758 4.42a1 1 0 01-1.45 1.054L10 15.445l-3.994 2.1a1 1 0 01-1.45-1.055l.758-4.419-3.21-3.13a1 1 0 01.554-1.707l4.438-.644 2.01-4.02A1 1 0 0110 2z"
+                />
+              </svg>
+            </div>
+
+            <div>
+              <h3 class="font-semibold text-club-text-primary">
+                Innovation
+              </h3>
+
+              <p class="mt-1 text-sm leading-6 text-club-text-secondary">
+                Turn ideas into projects and meaningful technology solutions.
+              </p>
+            </div>
+          </div>
+
+
+          <div class="flex items-start gap-3">
+            <div
+              class="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-club-primary/10 text-club-primary"
+              aria-hidden="true"
+            >
+              <svg
+                class="h-4 w-4"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M10 2a8 8 0 100 16 8 8 0 000-16zm1 4a1 1 0 10-2 0v4a1 1 0 00.293.707l2.5 2.5a1 1 0 001.414-1.414L11 9.586V6z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </div>
+
+            <div>
+              <h3 class="font-semibold text-club-text-primary">
+                Continuous Growth
+              </h3>
+
+              <p class="mt-1 text-sm leading-6 text-club-text-secondary">
+                Keep learning, improving and preparing for future challenges.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+
+        <!-- CTA -->
+        <div class="mt-9">
+          <a
+            href="./pages/about.html"
+            class="club-btn club-btn-primary inline-flex items-center justify-center"
+          >
+            Learn More About Us
+
+            <svg
+              class="ml-2 h-4 w-4"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+              aria-hidden="true"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M10.293 3.293a1 1 0 011.414 0l5 5a1 1 0 010 1.414l-5 5a1 1 0 01-1.414-1.414L13.586 10H3a1 1 0 110-2h10.586l-3.293-3.293a1 1 0 01-1.414 0z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+<!-- =========================
+     FEATURED EVENTS SECTION
+========================= -->
+<section
+  class="bg-white py-20 sm:py-24"
+  aria-labelledby="featured-events-title"
+>
+  <div class="club-container">
+
+    <!-- Section Header -->
+    <div class="flex flex-col gap-5 sm:flex-row sm:items-end sm:justify-between">
+
+      <div>
+        <div
+          class="mb-4 inline-flex items-center rounded-full border border-club-accent/30 bg-club-accent/10 px-4 py-2"
+        >
+          <p
+            class="text-sm font-bold uppercase tracking-[0.18em] text-club-accent"
+          >
+            Featured Events
+          </p>
+        </div>
+
+        <h2
+          id="featured-events-title"
+          class="text-3xl font-bold tracking-tight text-club-text-primary sm:text-4xl"
+        >
+          What's happening at
+          <span class="text-club-primary">CUET Computer Club?</span>
+        </h2>
+
+        <p
+          class="mt-4 max-w-2xl text-base leading-7 text-club-text-secondary"
+        >
+          Discover upcoming events, competitions, workshops and
+          technology-focused activities organized by the club.
+        </p>
+      </div>
+
+      <a
+        href="./pages/events.html"
+        class="club-btn club-btn-outline inline-flex shrink-0 items-center justify-center"
+      >
+        View All Events
+
+        <svg
+          class="ml-2 h-4 w-4"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+          aria-hidden="true"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M10.293 3.293a1 1 0 011.414 0l5 5a1 1 0 010 1.414l-5 5a1 1 0 01-1.414-1.414L13.586 10H3a1 1 0 110-2h10.586l-3.293-3.293a1 1 0 011.414 0z"
+            clip-rule="evenodd"
+          />
+        </svg>
+      </a>
+
+    </div>
+
+
+    <!-- Event Cards -->
+    <div class="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+
+      <!-- Event Card 1 -->
+      <article
+        class="group overflow-hidden rounded-club-lg border border-club-border bg-club-surface shadow-club-sm transition duration-200 hover:-translate-y-1 hover:shadow-club-md"
+      >
+
+        <!-- Image -->
+        <div class="relative aspect-[16/9] overflow-hidden bg-club-surface-muted">
+          <img
+            src="./assets/images/image1.jpg"
+            loading="lazy"
+            alt="Programming competition"
+            class="h-full w-full object-cover transition duration-300 group-hover:scale-[1.02]"
+          />
+
+          <div class="absolute left-4 top-4">
+            <span class="club-badge club-badge-accent">
+              Competition
+            </span>
+          </div>
+        </div>
+
+        <!-- Content -->
+        <div class="p-6">
+
+          <div class="flex items-center gap-2 text-sm text-club-text-muted">
+            <svg
+              class="h-4 w-4 text-club-primary"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+              aria-hidden="true"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M6 2a1 1 0 011 1v1h6V3a1 1 0 112 0v1h1a2 2 0 012 2v9a2 2 0 01-2 2H4a2 2 0 01-2-2V6a2 2 0 012-2h1V3a1 1 0 011-1zm10 7H4v6h12V9z"
+                clip-rule="evenodd"
+              />
+            </svg>
+
+            <span>Upcoming Event</span>
+          </div>
+
+          <h3
+            class="mt-4 text-xl font-bold leading-tight text-club-text-primary"
+          >
+            Programming Contest
+          </h3>
+
+          <p
+            class="mt-3 text-sm leading-6 text-club-text-secondary"
+          >
+            Test your problem-solving skills and compete with
+            fellow programmers in a challenging programming contest.
+          </p>
+
+          <div
+            class="mt-5 flex items-center justify-between border-t border-club-border pt-5"
+          >
+            <div>
+              <p class="text-xs text-club-text-muted">
+                Date
+              </p>
+
+              <p class="mt-1 text-sm font-semibold text-club-text-primary">
+                Coming Soon
+              </p>
+            </div>
+
+            <a
+              href="./pages/events.html"
+              class="text-sm font-semibold text-club-primary hover:text-club-secondary"
+            >
+              Details →
+            </a>
+          </div>
+
+        </div>
+      </article>
+
+
+      <!-- Event Card 2 -->
+      <article
+        class="group overflow-hidden rounded-club-lg border border-club-border bg-club-surface shadow-club-sm transition duration-200 hover:-translate-y-1 hover:shadow-club-md"
+      >
+
+        <div class="relative aspect-[16/9] overflow-hidden bg-club-surface-muted">
+          <img
+            src="./assets/images/image6.jpg"
+            alt="Technology workshop"
+            loading="lazy"
+            class="h-full w-full object-cover transition duration-300 group-hover:scale-[1.02]"
+          />
+
+          <div class="absolute left-4 top-4">
+            <span class="club-badge club-badge-info">
+              Workshop
+            </span>
+          </div>
+        </div>
+
+        <div class="p-6">
+
+          <div class="flex items-center gap-2 text-sm text-club-text-muted">
+            <svg
+              class="h-4 w-4 text-club-secondary"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+              aria-hidden="true"
+            >
+              <path
+                d="M4 3a2 2 0 012-2h8a2 2 0 012 2v14a2 2 0 01-2 2H6a2 2 0 01-2-2V3zm3 1a1 1 0 100 2h6a1 1 0 100-2H7zm0 4a1 1 0 100 2h6a1 1 0 100-2H7zm0 4a1 1 0 100 2h4a1 1 0 100-2H7z"
+              />
+            </svg>
+
+            <span>Learning Session</span>
+          </div>
+
+          <h3
+            class="mt-4 text-xl font-bold leading-tight text-club-text-primary"
+          >
+            Technology Workshop
+          </h3>
+
+          <p
+            class="mt-3 text-sm leading-6 text-club-text-secondary"
+          >
+            Explore practical technologies and gain hands-on
+            experience through an interactive learning session.
+          </p>
+
+          <div
+            class="mt-5 flex items-center justify-between border-t border-club-border pt-5"
+          >
+            <div>
+              <p class="text-xs text-club-text-muted">
+                Date
+              </p>
+
+              <p class="mt-1 text-sm font-semibold text-club-text-primary">
+                Coming Soon
+              </p>
+            </div>
+
+            <a
+              href="./pages/events.html"
+              class="text-sm font-semibold text-club-primary hover:text-club-secondary"
+            >
+              Details →
+            </a>
+          </div>
+
+        </div>
+      </article>
+
+
+      <!-- Event Card 3 -->
+      <article
+        class="group overflow-hidden rounded-club-lg border border-club-border bg-club-surface shadow-club-sm transition duration-200 hover:-translate-y-1 hover:shadow-club-md"
+      >
+
+        <div class="relative aspect-[16/9] overflow-hidden bg-club-surface-muted">
+          <img
+            src="./assets/images/image4.jpg"
+            alt="Club seminar"
+            loading="lazy"
+            class="h-full w-full object-cover transition duration-300 group-hover:scale-[1.02]"
+          />
+
+          <div class="absolute left-4 top-4">
+            <span class="club-badge club-badge-success">
+              Seminar
+            </span>
+          </div>
+        </div>
+
+        <div class="p-6">
+
+          <div class="flex items-center gap-2 text-sm text-club-text-muted">
+            <svg
+              class="h-4 w-4 text-club-primary"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+              aria-hidden="true"
+            >
+              <path
+                d="M10 2a8 8 0 100 16 8 8 0 000-16zm1 11H9V7h2v6zm0-8H9V3h2v2z"
+              />
+            </svg>
+
+            <span>Club Activity</span>
+          </div>
+
+          <h3
+            class="mt-4 text-xl font-bold leading-tight text-club-text-primary"
+          >
+            Tech Talk &amp; Seminar
+          </h3>
+
+          <p
+            class="mt-3 text-sm leading-6 text-club-text-secondary"
+          >
+            Learn from experienced speakers and explore current
+            trends, ideas and opportunities in technology.
+          </p>
+
+          <div
+            class="mt-5 flex items-center justify-between border-t border-club-border pt-5"
+          >
+            <div>
+              <p class="text-xs text-club-text-muted">
+                Date
+              </p>
+
+              <p class="mt-1 text-sm font-semibold text-club-text-primary">
+                Coming Soon
+              </p>
+            </div>
+
+            <a
+              href="./pages/events.html"
+              class="text-sm font-semibold text-club-primary hover:text-club-secondary"
+            >
+              Details →
+            </a>
+          </div>
+
+        </div>
+      </article>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- =========================
+     LATEST NEWS SECTION
+========================= -->
+<section
+  class="bg-club-background py-20 sm:py-24"
+  aria-labelledby="latest-news-title"
+>
+  <div class="club-container">
+
+    <!-- Section Header -->
+    <div class="flex flex-col gap-5 sm:flex-row sm:items-end sm:justify-between">
+
+      <div>
+        <div
+          class="mb-4 inline-flex items-center rounded-full border border-club-accent/30 bg-club-accent/10 px-4 py-2"
+        >
+          <p
+            class="text-sm font-bold uppercase tracking-[0.18em] text-club-accent"
+          >
+            Latest News
+          </p>
+        </div>
+
+        <h2
+          id="latest-news-title"
+          class="text-3xl font-bold tracking-tight text-club-text-primary sm:text-4xl"
+        >
+          Latest
+          <span class="text-club-primary">News &amp; Announcements</span>
+        </h2>
+
+        <p
+          class="mt-4 max-w-2xl text-base leading-7 text-club-text-secondary"
+        >
+          Stay updated with the latest activities, announcements,
+          achievements and opportunities from CUET Computer Club.
+        </p>
+      </div>
+
+      <a
+        href="./pages/news.html"
+        class="club-btn club-btn-outline inline-flex shrink-0 items-center justify-center"
+      >
+        View All News
+
+        <svg
+          class="ml-2 h-4 w-4"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+          aria-hidden="true"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M10.293 3.293a1 1 0 011.414 0l5 5a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 1.414L13.586 10H3a1 1 0 110-2h10.586l-3.293-3.293a1 1 0 010-1.414z"
+            clip-rule="evenodd"
+          />
+        </svg>
+      </a>
+
+    </div>
+
+
+    <!-- News Cards -->
+    <div class="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+
+      <!-- News Card 1 -->
+      <article
+        class="group overflow-hidden rounded-club-lg border border-club-border bg-club-surface shadow-club-sm transition duration-200 hover:-translate-y-1 hover:shadow-club-md"
+      >
+
+        <div class="relative aspect-[16/9] overflow-hidden bg-club-surface-muted">
+          <img
+            src="./assets/images/image6.jpg"
+            loading="lazy"
+            alt="CUET Computer Club event"
+            class="h-full w-full object-cover transition duration-300 group-hover:scale-[1.02]"
+          />
+
+          <div class="absolute left-4 top-4">
+            <span class="club-badge club-badge-info">
+              Announcement
+            </span>
+          </div>
+        </div>
+
+        <div class="p-6">
+
+          <div class="flex items-center gap-2 text-xs text-club-text-muted">
+            <svg
+              class="h-4 w-4 text-club-primary"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+              aria-hidden="true"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M6 2a1 1 0 011 1v1h6V3a1 1 0 112 0v1h1a2 2 0 012 2v9a2 2 0 01-2 2H4a2 2 0 01-2-2V6a2 2 0 012-2h1V3a1 1 0 011-1zm10 7H4v6h12V9z"
+                clip-rule="evenodd"
+              />
+            </svg>
+
+            <span>Recent Update</span>
+          </div>
+
+          <h3
+            class="mt-4 text-xl font-bold leading-tight text-club-text-primary"
+          >
+            CUET Computer Club Activities &amp; Updates
+          </h3>
+
+          <p
+            class="mt-3 text-sm leading-6 text-club-text-secondary"
+          >
+            Get the latest information about upcoming activities,
+            opportunities and important club announcements.
+          </p>
+
+          <a
+            href="./pages/news.html"
+            class="mt-5 inline-flex items-center text-sm font-semibold text-club-primary hover:text-club-secondary"
+          >
+            Read More
+            <span class="ml-2" aria-hidden="true">→</span>
+          </a>
+
+        </div>
+      </article>
+
+
+      <!-- News Card 2 -->
+      <article
+        class="group overflow-hidden rounded-club-lg border border-club-border bg-club-surface shadow-club-sm transition duration-200 hover:-translate-y-1 hover:shadow-club-md"
+      >
+
+        <div class="relative aspect-[16/9] overflow-hidden bg-club-surface-muted">
+          <img
+            src="./assets/images/image9.jpg"
+            alt="Students participating in a technology activity"
+            loading="lazy"
+            class="h-full w-full object-cover transition duration-300 group-hover:scale-[1.02]"
+          />
+
+          <div class="absolute left-4 top-4">
+            <span class="club-badge club-badge-success">
+              Activity
+            </span>
+          </div>
+        </div>
+
+        <div class="p-6">
+
+          <div class="flex items-center gap-2 text-xs text-club-text-muted">
+            <svg
+              class="h-4 w-4 text-club-secondary"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+              aria-hidden="true"
+            >
+              <path
+                d="M10 2a8 8 0 100 16 8 8 0 000-16zm1 4a1 1 0 10-2 0v4a1 1 0 00.293.707l2.5 2.5a1 1 0 001.414-1.414L11 9.586V6z"
+              />
+            </svg>
+
+            <span>Club Activity</span>
+          </div>
+
+          <h3
+            class="mt-4 text-xl font-bold leading-tight text-club-text-primary"
+          >
+            Learning, Collaboration &amp; Innovation
+          </h3>
+
+          <p
+            class="mt-3 text-sm leading-6 text-club-text-secondary"
+          >
+            Discover how members are learning new technologies,
+            collaborating on ideas and building practical solutions.
+          </p>
+
+          <a
+            href="./pages/news.html"
+            class="mt-5 inline-flex items-center text-sm font-semibold text-club-primary hover:text-club-secondary"
+          >
+            Read More
+            <span class="ml-2" aria-hidden="true">→</span>
+          </a>
+
+        </div>
+      </article>
+
+
+      <!-- News Card 3 -->
+      <article
+        class="group overflow-hidden rounded-club-lg border border-club-border bg-club-surface shadow-club-sm transition duration-200 hover:-translate-y-1 hover:shadow-club-md"
+      >
+
+        <div class="relative aspect-[16/9] overflow-hidden bg-club-surface-muted">
+          <img
+            src="./assets/images/image1.jpg"
+            alt="CUET Computer Club technology workshop"
+            loading="lazy"
+            class="h-full w-full object-cover transition duration-300 group-hover:scale-[1.02]"
+          />
+
+          <div class="absolute left-4 top-4">
+            <span class="club-badge club-badge-accent">
+              Opportunity
+            </span>
+          </div>
+        </div>
+
+        <div class="p-6">
+
+          <div class="flex items-center gap-2 text-xs text-club-text-muted">
+            <svg
+              class="h-4 w-4 text-club-accent"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+              aria-hidden="true"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M10 2a8 8 0 100 16 8 8 0 000-16zm1 4a1 1 0 10-2 0v4H7a1 1 0 100 2h4a1 1 0 001-1V6z"
+                clip-rule="evenodd"
+              />
+            </svg>
+
+            <span>Member Opportunity</span>
+          </div>
+
+          <h3
+            class="mt-4 text-xl font-bold leading-tight text-club-text-primary"
+          >
+            Explore New Technology Opportunities
+          </h3>
+
+          <p
+            class="mt-3 text-sm leading-6 text-club-text-secondary"
+          >
+            Find opportunities to participate in workshops,
+            competitions, projects and other technology initiatives.
+          </p>
+
+          <a
+            href="./pages/news.html"
+            class="mt-5 inline-flex items-center text-sm font-semibold text-club-primary hover:text-club-secondary"
+          >
+            Read More
+            <span class="ml-2" aria-hidden="true">→</span>
+          </a>
+
+        </div>
+      </article>
+
+    </div>
+
+  </div>
+</section>
+
+
+
+<!-- =========================
+     PROJECTS & INNOVATION SECTION
+========================= -->
+<section
+  class="bg-white py-20 sm:py-24"
+  aria-labelledby="projects-title"
+>
+  <div class="club-container">
+
+    <!-- Section Header -->
+    <div class="mx-auto max-w-3xl text-center">
+
+      <div
+        class="mb-4 inline-flex items-center rounded-full border border-club-accent/30 bg-club-accent/10 px-4 py-2"
+      >
+        <p
+          class="text-sm font-bold uppercase tracking-[0.18em] text-club-accent"
+        >
+          Projects &amp; Innovation
+        </p>
+      </div>
+
+      <h2
+        id="projects-title"
+        class="text-3xl font-bold tracking-tight text-club-text-primary sm:text-4xl"
+      >
+        Turning ideas into
+        <span class="text-club-primary">real solutions.</span>
+      </h2>
+
+      <p
+        class="mt-5 text-base leading-7 text-club-text-secondary sm:text-lg"
+      >
+        Explore technology projects created through collaboration,
+        experimentation and practical problem solving.
+      </p>
+
+    </div>
+
+
+    <!-- Project Showcase -->
+    <div class="mt-12 grid gap-6 lg:grid-cols-3">
+
+      <!-- Project 1 -->
+      <article
+        class="group overflow-hidden rounded-club-lg border border-club-border bg-club-surface shadow-club-sm transition duration-200 hover:-translate-y-1 hover:shadow-club-md"
+      >
+
+        <div class="relative aspect-[16/10] overflow-hidden bg-club-surface-muted">
+
+          <img
+            src="./assets/images/image5.jpg"
+            alt="Technology project developed by CUET Computer Club members"
+            loading="lazy"
+            class="h-full w-full object-cover transition duration-300 group-hover:scale-[1.02]"
+          />
+
+          <div class="absolute left-4 top-4">
+            <span class="club-badge club-badge-info">
+              Web Development
+            </span>
+          </div>
+
+        </div>
+
+        <div class="p-6">
+
+          <h3
+            class="text-xl font-bold text-club-text-primary"
+          >
+            Club Digital Platform
+          </h3>
+
+          <p
+            class="mt-3 text-sm leading-6 text-club-text-secondary"
+          >
+            A technology-driven platform designed to connect
+            students with club activities, events and resources.
+          </p>
+
+          <div class="mt-5 flex flex-wrap gap-2">
+            <span class="rounded-full bg-club-background px-3 py-1 text-xs font-medium text-club-text-secondary">
+              HTML
+            </span>
+
+            <span class="rounded-full bg-club-background px-3 py-1 text-xs font-medium text-club-text-secondary">
+              JavaScript
+            </span>
+
+            <span class="rounded-full bg-club-background px-3 py-1 text-xs font-medium text-club-text-secondary">
+              Node.js
+            </span>
+          </div>
+
+          <a
+            href="./pages/projects.html"
+            class="mt-6 inline-flex items-center text-sm font-semibold text-club-primary hover:text-club-secondary"
+          >
+            View Project
+            <span class="ml-2" aria-hidden="true">→</span>
+          </a>
+
+        </div>
+      </article>
+
+
+      <!-- Project 2 -->
+      <article
+        class="group overflow-hidden rounded-club-lg border border-club-border bg-club-surface shadow-club-sm transition duration-200 hover:-translate-y-1 hover:shadow-club-md"
+      >
+
+        <div class="relative aspect-[16/10] overflow-hidden bg-club-surface-muted">
+
+          <img
+            src="./assets/images/image4.jpg"
+            alt="Students collaborating on a technology project"
+            loading="lazy"
+            class="h-full w-full object-cover transition duration-300 group-hover:scale-[1.02]"
+          />
+
+          <div class="absolute left-4 top-4">
+            <span class="club-badge club-badge-success">
+              Innovation
+            </span>
+          </div>
+
+        </div>
+
+        <div class="p-6">
+
+          <h3
+            class="text-xl font-bold text-club-text-primary"
+          >
+            Student Innovation Project
+          </h3>
+
+          <p
+            class="mt-3 text-sm leading-6 text-club-text-secondary"
+          >
+            A collaborative initiative where students explore
+            ideas and develop practical technology-based solutions.
+          </p>
+
+          <div class="mt-5 flex flex-wrap gap-2">
+            <span class="rounded-full bg-club-background px-3 py-1 text-xs font-medium text-club-text-secondary">
+              Python
+            </span>
+
+            <span class="rounded-full bg-club-background px-3 py-1 text-xs font-medium text-club-text-secondary">
+              AI
+            </span>
+
+            <span class="rounded-full bg-club-background px-3 py-1 text-xs font-medium text-club-text-secondary">
+              Research
+            </span>
+          </div>
+
+          <a
+            href="./pages/projects.html"
+            class="mt-6 inline-flex items-center text-sm font-semibold text-club-primary hover:text-club-secondary"
+          >
+            View Project
+            <span class="ml-2" aria-hidden="true">→</span>
+          </a>
+
+        </div>
+      </article>
+
+
+      <!-- Project 3 -->
+      <article
+        class="group overflow-hidden rounded-club-lg border border-club-border bg-club-surface shadow-club-sm transition duration-200 hover:-translate-y-1 hover:shadow-club-md"
+      >
+
+        <div class="relative aspect-[16/10] overflow-hidden bg-club-surface-muted">
+
+          <img
+            src="./assets/images/image1.jpg"
+            alt="Computer science students working together"
+            loading="lazy"
+            class="h-full w-full object-cover transition duration-300 group-hover:scale-[1.02]"
+          />
+
+          <div class="absolute left-4 top-4">
+            <span class="club-badge club-badge-accent">
+              Research
+            </span>
+          </div>
+
+        </div>
+
+        <div class="p-6">
+
+          <h3
+            class="text-xl font-bold text-club-text-primary"
+          >
+            Technology Research Initiative
+          </h3>
+
+          <p
+            class="mt-3 text-sm leading-6 text-club-text-secondary"
+          >
+            An opportunity for members to explore emerging
+            technologies and develop research-oriented solutions.
+          </p>
+
+          <div class="mt-5 flex flex-wrap gap-2">
+            <span class="rounded-full bg-club-background px-3 py-1 text-xs font-medium text-club-text-secondary">
+              Research
+            </span>
+
+            <span class="rounded-full bg-club-background px-3 py-1 text-xs font-medium text-club-text-secondary">
+              Machine Learning
+            </span>
+
+            <span class="rounded-full bg-club-background px-3 py-1 text-xs font-medium text-club-text-secondary">
+              Innovation
+            </span>
+          </div>
+
+          <a
+            href="./pages/projects.html"
+            class="mt-6 inline-flex items-center text-sm font-semibold text-club-primary hover:text-club-secondary"
+          >
+            View Project
+            <span class="ml-2" aria-hidden="true">→</span>
+          </a>
+
+        </div>
+      </article>
+
+    </div>
+
+
+    <!-- Bottom CTA -->
+    <div class="mt-10 text-center">
+
+      <a
+        href="./pages/projects.html"
+        class="club-btn club-btn-primary inline-flex items-center justify-center"
+      >
+        Explore All Projects
+
+        <svg
+          class="ml-2 h-4 w-4"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+          aria-hidden="true"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M10.293 3.293a1 1 0 011.414 0l5 5a1 1 0 010 1.414l-5 5a1 1 0 01-1.414-1.414L13.586 10H3a1 1 0 110-2h10.586l-3.293-3.293a1 1 0 01-1.414 0z"
+            clip-rule="evenodd"
+          />
+        </svg>
+      </a>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- =========================
+     GALLERY SECTION
+========================= -->
+<section
+  class="bg-club-background py-20 sm:py-24"
+  aria-labelledby="gallery-title"
+>
+  <div class="club-container">
+
+    <!-- Section Header -->
+    <div class="flex flex-col gap-5 sm:flex-row sm:items-end sm:justify-between">
+
+      <div>
+        <div
+          class="mb-4 inline-flex items-center rounded-full border border-club-accent/30 bg-club-accent/10 px-4 py-2"
+        >
+          <p
+            class="text-sm font-bold uppercase tracking-[0.18em] text-club-accent"
+          >
+            Gallery
+          </p>
+        </div>
+
+        <h2
+          id="gallery-title"
+          class="text-3xl font-bold tracking-tight text-club-text-primary sm:text-4xl"
+        >
+          Moments from our
+          <span class="text-club-primary">community.</span>
+        </h2>
+
+        <p
+          class="mt-4 max-w-2xl text-base leading-7 text-club-text-secondary sm:text-lg"
+        >
+          A glimpse of the events, activities and experiences
+          that bring CUET Computer Club members together.
+        </p>
+      </div>
+
+      <a
+        href="./pages/gallery.html"
+        class="club-btn club-btn-outline inline-flex shrink-0 items-center justify-center"
+      >
+        View Full Gallery
+
+        <svg
+          class="ml-2 h-4 w-4"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+          aria-hidden="true"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M10.293 3.293a1 1 0 011.414 0l5 5a1 1 0 010 1.414l-5 5a1 1 0 01-1.414-1.414L13.586 10H3a1 1 0 110-2h10.586l-3.293-3.293a1 1 0 01-1.414 0z"
+            clip-rule="evenodd"
+          />
+        </svg>
+      </a>
+
+    </div>
+
+
+    <!-- Gallery Grid -->
+    <div
+      class="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-4"
+    >
+
+      <!-- Gallery Item 1 -->
+      <a
+        href="./pages/gallery.html"
+        class="group relative overflow-hidden rounded-club-lg border border-club-border bg-club-surface shadow-club-sm sm:col-span-2 sm:row-span-2"
+        aria-label="View club event photo"
+      >
+        <div class="aspect-square sm:aspect-auto sm:h-full">
+
+          <img
+            src="./assets/images/image1.jpg"
+            alt="CUET Computer Club event"
+            loading="lazy"
+            class="h-full w-full object-cover transition duration-300 group-hover:scale-105"
+          />
+
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-club-primary/75 via-transparent to-transparent opacity-90"
+          ></div>
+
+          <div class="absolute bottom-0 left-0 right-0 p-6">
+            <p class="text-xs font-semibold uppercase tracking-wider text-club-accent">
+              Club Event
+            </p>
+
+            <p class="mt-1 text-lg font-bold text-white">
+              Learning &amp; Collaboration
+            </p>
+          </div>
+
+        </div>
+      </a>
+
+
+      <!-- Gallery Item 2 -->
+      <a
+        href="./pages/gallery.html"
+        class="group relative overflow-hidden rounded-club-lg border border-club-border bg-club-surface shadow-club-sm"
+        aria-label="View workshop photo"
+      >
+        <div class="aspect-[4/3]">
+
+          <img
+            src="./assets/images/image6.jpg"
+            alt="Technology workshop"
+            loading="lazy"
+            class="h-full w-full object-cover transition duration-300 group-hover:scale-105"
+          />
+
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-club-primary/70 via-transparent to-transparent"
+          ></div>
+
+          <div class="absolute bottom-0 left-0 right-0 p-4">
+            <p class="text-xs font-semibold uppercase tracking-wider text-club-accent">
+              Workshop
+            </p>
+
+            <p class="mt-1 font-semibold text-white">
+              Hands-on Learning
+            </p>
+          </div>
+
+        </div>
+      </a>
+
+
+      <!-- Gallery Item 3 -->
+      <a
+        href="./pages/gallery.html"
+        class="group relative overflow-hidden rounded-club-lg border border-club-border bg-club-surface shadow-club-sm"
+        aria-label="View competition photo"
+      >
+        <div class="aspect-[4/3]">
+
+          <img
+            src="./assets/images/image3.jpg"
+            alt="Programming competition"
+            loading="lazy"
+            class="h-full w-full object-cover transition duration-300 group-hover:scale-105"
+          />
+
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-club-primary/70 via-transparent to-transparent"
+          ></div>
+
+          <div class="absolute bottom-0 left-0 right-0 p-4">
+            <p class="text-xs font-semibold uppercase tracking-wider text-club-accent">
+              Competition
+            </p>
+
+            <p class="mt-1 font-semibold text-white">
+              Challenge &amp; Excellence
+            </p>
+          </div>
+
+        </div>
+      </a>
+
+
+      <!-- Gallery Item 4 -->
+      <a
+        href="./pages/gallery.html"
+        class="group relative overflow-hidden rounded-club-lg border border-club-border bg-club-surface shadow-club-sm"
+        aria-label="View community photo"
+      >
+        <div class="aspect-[4/3]">
+
+          <img
+            src="./assets/images/image8.jpg"
+            alt="CUET Computer Club community"
+            loading="lazy"
+            class="h-full w-full object-cover transition duration-300 group-hover:scale-105"
+          />
+
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-club-primary/70 via-transparent to-transparent"
+          ></div>
+
+          <div class="absolute bottom-0 left-0 right-0 p-4">
+            <p class="text-xs font-semibold uppercase tracking-wider text-club-accent">
+              Community
+            </p>
+
+            <p class="mt-1 font-semibold text-white">
+              Connect &amp; Grow
+            </p>
+          </div>
+
+        </div>
+      </a>
+
+
+      <!-- Gallery Item 5 -->
+      <a
+        href="./pages/gallery.html"
+        class="group relative overflow-hidden rounded-club-lg border border-club-border bg-club-surface shadow-club-sm"
+        aria-label="View project showcase photo"
+      >
+        <div class="aspect-[4/3]">
+
+          <img
+            src="./assets/images/image2.jpg"
+            alt="Student project showcase"
+            loading="lazy"
+            class="h-full w-full object-cover transition duration-300 group-hover:scale-105"
+          />
+
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-club-primary/70 via-transparent to-transparent"
+          ></div>
+
+          <div class="absolute bottom-0 left-0 right-0 p-4">
+            <p class="text-xs font-semibold uppercase tracking-wider text-club-accent">
+              Projects
+            </p>
+
+            <p class="mt-1 font-semibold text-white">
+              Ideas into Action
+            </p>
+          </div>
+
+        </div>
+      </a>
+
+    </div>
+
+  </div>
+</section>
+
+
+
+<!-- =========================
+     HOMEPAGE CTA
+========================= -->
+<section
+  class="relative overflow-hidden bg-club-primary py-20 sm:py-24"
+  aria-labelledby="cta-title"
+>
+  <!-- Decorative Elements -->
+  <div
+    class="absolute -right-24 -top-24 h-72 w-72 rounded-full border border-white/10"
+    aria-hidden="true"
+  ></div>
+
+  <div
+    class="absolute -bottom-32 -left-20 h-80 w-80 rounded-full border border-club-accent/20"
+    aria-hidden="true"
+  ></div>
+
+  <div class="club-container relative">
+    <div class="mx-auto max-w-4xl text-center">
+
+      <!-- Label -->
+      <div
+        class="mb-5 inline-flex items-center rounded-full border border-club-accent/40 bg-club-accent/10 px-4 py-2"
+      >
+        <p
+          class="text-sm font-bold uppercase tracking-[0.18em] text-club-accent"
+        >
+          Join the Community
+        </p>
+      </div>
+
+      <!-- Heading -->
+      <h2
+        id="cta-title"
+        class="text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl"
+      >
+        Be part of the next generation of
+        <span class="text-club-accent">
+          technology leaders.
+        </span>
+      </h2>
+
+      <!-- Description -->
+      <p
+        class="mx-auto mt-6 max-w-2xl text-base leading-7 text-white/75 sm:text-lg"
+      >
+        Join CUET Computer Club to learn new skills, build meaningful
+        projects, participate in competitions and grow together with
+        a community of passionate students.
+      </p>
+
+      <!-- Actions -->
+      <div
+        class="mt-9 flex flex-col items-center justify-center gap-3 sm:flex-row"
+      >
+        <a
+          href="./pages/register.html"
+          class="club-btn inline-flex min-w-44 items-center justify-center border border-club-accent bg-club-accent text-club-primary-dark shadow-club-sm transition hover:bg-white hover:border-white"
+        >
+          Join the Club
+
+          <svg
+            class="ml-2 h-4 w-4"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+            aria-hidden="true"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M10 2a1 1 0 011 1v6h6a1 1 0 110 2h-6v6a1 1 0 11-2 0v-6H3a1 1 0 110-2h6V3a1 1 0 011-1z"
+              clip-rule="evenodd"
+            />
+          </svg>
+        </a>
+
+        <a
+          href="./pages/events.html"
+          class="club-btn inline-flex min-w-44 items-center justify-center border border-white/40 bg-white/10 text-white hover:bg-white hover:text-club-primary"
+        >
+          Explore Events
+
+          <svg
+            class="ml-2 h-4 w-4"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+            aria-hidden="true"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M10.293 3.293a1 1 0 011.414 0l5 5a1 1 0 010 1.414l-5 5a1 1 0 01-1.414-1.414L13.586 10H3a1 1 0 110-2h10.586l-3.293-3.293a1 1 0 01-1.414 0z"
+              clip-rule="evenodd"
+            />
+          </svg>
+        </a>
+      </div>
+
+      <!-- Trust / Identity Line -->
+      <div
+        class="mt-10 flex flex-wrap items-center justify-center gap-x-6 gap-y-3 text-sm text-white/60"
+      >
+        <span>Learn</span>
+        <span class="text-club-accent" aria-hidden="true">•</span>
+
+        <span>Build</span>
+        <span class="text-club-accent" aria-hidden="true">•</span>
+
+        <span>Compete</span>
+        <span class="text-club-accent" aria-hidden="true">•</span>
+
+        <span>Collaborate</span>
+        <span class="text-club-accent" aria-hidden="true">•</span>
+
+        <span>Lead</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+</main>
+<!-- =========================
+     FOOTER
+========================= -->
+<footer class="border-t border-white/10 bg-club-primary-dark text-white">
+  <div class="club-container">
+
+    <!-- Main Footer -->
+    <div class="grid gap-12 py-16 sm:grid-cols-2 lg:grid-cols-4 lg:gap-10">
+
+      <!-- Brand -->
+      <div class="sm:col-span-2 lg:col-span-1">
+        <a
+          href="./index.html"
+          class="inline-flex items-center gap-3"
+          aria-label="CUET Computer Club home"
+        >
+          <span
+           class="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-club-accent/40 bg-club-primary text-xs font-extrabold tracking-wider text-club-accent"
+          >
+            CCC
+          </span>
+
+          <span>
+            <span class="block text-base font-bold">
+              CUET Computer Club
+            </span>
+
+            <span class="mt-0.5 block text-xs text-white/55">
+              CUET
+            </span>
+          </span>
+        </a>
+
+        <p class="mt-5 max-w-sm text-sm leading-6 text-white/65">
+          A student-driven community focused on technology,
+          learning, innovation and collaboration at the
+          Chittagong University of Engineering &amp; Technology.
+        </p>
+
+        <!-- Social Links -->
+        <div class="mt-6 flex items-center gap-3">
+
+          <a
+            href="#"
+            class="flex h-9 w-9 items-center justify-center rounded-full border border-white/15 bg-white/5 text-sm font-bold text-white/75 transition hover:border-club-accent hover:bg-club-accent hover:text-club-primary-dark"
+            aria-label="Facebook"
+          >
+            f
+          </a>
+
+          <a
+            href="#"
+            class="flex h-9 w-9 items-center justify-center rounded-full border border-white/15 bg-white/5 text-sm font-bold text-white/75 transition hover:border-club-accent hover:bg-club-accent hover:text-club-primary-dark"
+            aria-label="Instagram"
+          >
+            ig
+          </a>
+
+          <a
+            href="#"
+            class="flex h-9 w-9 items-center justify-center rounded-full border border-white/15 bg-white/5 text-sm font-bold text-white/75 transition hover:border-club-accent hover:bg-club-accent hover:text-club-primary-dark"
+            aria-label="LinkedIn"
+          >
+            in
+          </a>
+
+          <a
+            href="#"
+            class="flex h-9 w-9 items-center justify-center rounded-full border border-white/15 bg-white/5 text-sm font-bold text-white/75 transition hover:border-club-accent hover:bg-club-accent hover:text-club-primary-dark"
+            aria-label="GitHub"
+          >
+            &lt;/&gt;
+          </a>
+
+        </div>
+      </div>
+
+
+      <!-- Quick Links -->
+      <div>
+        <h3 class="text-sm font-bold uppercase tracking-[0.14em] text-white">
+          Quick Links
+        </h3>
+
+        <ul class="mt-5 space-y-3 text-sm">
+          <li>
+            <a
+              href="index.html"
+              class="text-white/60 transition hover:text-club-accent"
+            >
+              Home
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="./pages/about.html"
+              class="text-white/60 transition hover:text-club-accent"
+            >
+              About Us
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="./pages/events.html"
+              class="text-white/60 transition hover:text-club-accent"
+            >
+              Events
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="./pages/news.html"
+              class="text-white/60 transition hover:text-club-accent"
+            >
+              News
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="./pages/projects.html"
+              class="text-white/60 transition hover:text-club-accent"
+            >
+              Projects
+            </a>
+          </li>
+        </ul>
+      </div>
+
+
+      <!-- Explore -->
+      <div>
+        <h3 class="text-sm font-bold uppercase tracking-[0.14em] text-white">
+          Explore
+        </h3>
+
+        <ul class="mt-5 space-y-3 text-sm">
+          <li>
+            <a
+              href="./pages/gallery.html"
+              class="text-white/60 transition hover:text-club-accent"
+            >
+              Gallery
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="./pages/contact.html"
+              class="text-white/60 transition hover:text-club-accent"
+            >
+              Contact
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="./pages/register.html"
+              class="text-white/60 transition hover:text-club-accent"
+            >
+              Join the Club
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="./pages/login.html"
+              class="text-white/60 transition hover:text-club-accent"
+            >
+              Login
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="#"
+              class="text-white/60 transition hover:text-club-accent"
+            >
+              FAQs
+            </a>
+          </li>
+        </ul>
+      </div>
+
+
+      <!-- Contact -->
+      <div>
+        <h3 class="text-sm font-bold uppercase tracking-[0.14em] text-white">
+          Contact
+        </h3>
+
+        <ul class="mt-5 space-y-4 text-sm">
+
+          <li>
+            <p class="text-xs font-semibold uppercase tracking-wider text-white/40">
+              Email
+            </p>
+
+            <a
+              href="mailto:computerclub@cuet.ac.bd"
+              class="mt-1 block text-white/65 transition hover:text-club-accent"
+            >
+              computerclub@cuet.ac.bd
+            </a>
+          </li>
+
+          <li>
+            <p class="text-xs font-semibold uppercase tracking-wider text-white/40">
+              Institution
+            </p>
+
+            <p class="mt-1 leading-6 text-white/65">
+              Chittagong University of Engineering &amp; Technology
+            </p>
+          </li>
+
+          <li>
+            <p class="text-xs font-semibold uppercase tracking-wider text-white/40">
+              Location
+            </p>
+
+            <p class="mt-1 text-white/65">
+              Chattogram, Bangladesh
+            </p>
+          </li>
+
+        </ul>
+      </div>
+
+    </div>
+
+
+    <!-- Bottom Footer -->
+    <div
+      class="flex flex-col gap-4 border-t border-white/10 py-6 text-xs text-white/45 sm:flex-row sm:items-center sm:justify-between"
+    >
+      <p>
+        © 2026 CUET Computer Club. All rights reserved.
+      </p>
+
+      <div class="flex flex-wrap gap-x-5 gap-y-2">
+        <a
+          href="#"
+          class="transition hover:text-white"
+        >
+          Privacy Policy
+        </a>
+
+        <a
+          href="#"
+          class="transition hover:text-white"
+        >
+          Terms of Use
+        </a>
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+
+
+ 
+
+  <!-- JavaScript -->
+  <script type="module" src="./js/pages/index.js"></script>
+
+
+
+</body>
+</html>
