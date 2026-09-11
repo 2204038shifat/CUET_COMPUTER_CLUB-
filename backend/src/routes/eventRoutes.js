@@ -46,6 +46,11 @@ import {
   deleteEvent
 } from "../controllers/eventController.js";
 
+import {
+  getManageableEventById,
+  getEventApprovalHistory
+} from "../controllers/eventController.js";
+
 
 
 
@@ -53,6 +58,14 @@ import {
 const router = express.Router();
 
 router.get("/", getPublishedEvents);
+router.get(
+  "/manage/:id",
+  protect,
+  authorizeRoles("COMMITTEE", "PRESIDENT"),
+  getManageableEventById
+);
+
+
 router.get("/:slug", getPublishedEventBySlug);
 
 
@@ -127,5 +140,11 @@ router.delete(
   deleteEvent
 );
 
+router.get(
+  "/manage/:eventId/history",
+  protect,
+  authorizeRoles("COMMITTEE", "PRESIDENT"),
+  getEventApprovalHistory
+);
 
 export default router;

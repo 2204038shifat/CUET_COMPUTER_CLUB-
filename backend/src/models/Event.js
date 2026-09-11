@@ -150,8 +150,19 @@ const eventSchema = new mongoose.Schema(
     approvedAt: {
       type: Date,
       default: null
-    }
+    },
+    rejectedBy: {
+  type: mongoose.Schema.Types.ObjectId,
+  ref: "User",
+  default: null
+},
+
+rejectedAt: {
+  type: Date,
+  default: null
+},
   },
+
   {
     timestamps: true
   }

@@ -1,4 +1,5 @@
 import Event from "../models/Event.js";
+import EventApprovalHistory from "../models/EventApprovalHistroy.js";
 
 export const createEvent = async (req, res) => {
   try {
@@ -169,6 +170,12 @@ export const submitEventForApproval = async (req, res) => {
 
     await event.save();
 
+    await EventApprovalHistory.create({
+  event: event._id,
+  action: "SUBMITTED",
+  performedBy: req.user._id
+});
+
     res.status(200).json({
       success: true,
       message: "Event submitted for approval",
@@ -208,6 +215,8 @@ export const approveEvent = async (req, res) => {
     event.approvedBy = req.user._id;
     event.approvedAt = new Date();
     event.rejectionReason = "";
+    event.rejectedBy = null;
+    event.rejectedAt = null;
 
     await event.save();
 
@@ -259,8 +268,19 @@ export const rejectEvent = async (req, res) => {
     event.rejectionReason = reason.trim();
     event.approvedBy = null;
     event.approvedAt = null;
+    event.rejectedBy = req.user._id;
+    event.rejectedAt = new Date();
 
     await event.save();
+
+    await EventApprovalHistory.create({
+  event: event._id,
+  action: "REJECTED",
+  performedBy: req.user._id,
+  reason: reason.trim()
+});
+
+
 
     res.status(200).json({
       success: true,
@@ -309,8 +329,27 @@ export const requestEventChanges = async (req, res) => {
     event.rejectionReason = reason.trim();
     event.approvedBy = null;
     event.approvedAt = null;
+    event.rejectedBy = req.user._id;
+    event.rejectedAt = new Date();
 
     await event.save();
+    await EventApprovalHistory.create({
+  event: event._id,
+  action: "CHANGES_REQUESTED",
+  performedBy: req.user._id,
+  reason: reason.trim()
+});
+
+
+
+
+
+
+    await EventApprovalHistory.create({
+  event: event._id,
+  action: "APPROVED",
+  performedBy: req.user._id
+});
 
     res.status(200).json({
       success: true,
@@ -385,6 +424,8 @@ export const updateEvent = async (req, res) => {
     event.rejectionReason = "";
     event.approvedBy = null;
     event.approvedAt = null;
+    event.rejectedBy = null;
+    event.rejectedAt = null;
 
     await event.save();
 
@@ -433,6 +474,14 @@ export const publishEvent = async (req, res) => {
     event.publicationStatus = "PUBLISHED";
 
     await event.save();
+    await EventApprovalHistory.create({
+  event: event._id,
+  action: "PUBLISHED",
+  performedBy: req.user._id
+});
+
+
+
 
     res.status(200).json({
       success: true,
@@ -471,6 +520,14 @@ export const unpublishEvent = async (req, res) => {
     event.publicationStatus = "UNPUBLISHED";
 
     await event.save();
+
+    await EventApprovalHistory.create({
+  event: event._id,
+  action: "UNPUBLISHED",
+  performedBy: req.user._id
+});
+
+
 
     res.status(200).json({
       success: true,
@@ -557,6 +614,87 @@ export const deleteEvent = async (req, res) => {
     });
   } catch (error) {
     console.error("Delete event error:", error);
+
+    res.status(500).json({
+      success: false,
+      message: "Server error"
+    });
+  }
+};
+
+
+export const getManageableEventById = async (req, res) => {
+  try {
+    const event = await Event.findById(req.params.id)
+      .populate("createdBy", "name email")
+      .populate("approvedBy", "name email");
+
+    if (!event || event.isDeleted) {
+      return res.status(404).json({
+        success: false,
+        message: "Event not found"
+      });
+    }
+
+    if (
+      req.user.role === "COMMITTEE" &&
+      event.createdBy._id.toString() !== req.user._id.toString()
+    ) {
+      return res.status(403).json({
+        success: false,
+        message: "You do not have permission to view this event"
+      });
+    }
+
+    res.status(200).json({
+      success: true,
+      event
+    });
+  } catch (error) {
+    console.error("Get manageable event error:", error);
+
+    res.status(500).json({
+      success: false,
+      message: "Server error"
+    });
+  }
+};
+
+
+export const getEventApprovalHistory = async (req, res) => {
+  try {
+    const event = await Event.findById(req.params.eventId);
+
+    if (!event || event.isDeleted) {
+      return res.status(404).json({
+        success: false,
+        message: "Event not found"
+      });
+    }
+
+    if (
+      req.user.role === "COMMITTEE" &&
+      event.createdBy.toString() !== req.user._id.toString()
+    ) {
+      return res.status(403).json({
+        success: false,
+        message: "You do not have permission to view this history"
+      });
+    }
+
+    const history = await EventApprovalHistory.find({
+      event: event._id
+    })
+      .sort({ createdAt: 1 })
+      .populate("performedBy", "name email role");
+
+    res.status(200).json({
+      success: true,
+      count: history.length,
+      history
+    });
+  } catch (error) {
+    console.error("Get approval history error:", error);
 
     res.status(500).json({
       success: false,
