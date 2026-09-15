@@ -8,6 +8,8 @@ import userRoutes from "./routes/userRoutes.js";
 import eventRoutes from "./routes/eventRoutes.js";
 import eventRegistrationRoutes from "./routes/eventRegistrationRoutes.js";
 
+import newsRoutes from "./routes/newsRoutes.js";
+
 
 
 
@@ -43,6 +45,7 @@ app.use(
   "/api/event-registrations",
   eventRegistrationRoutes
 );
+app.use("/api/news", newsRoutes);
 
 
 
